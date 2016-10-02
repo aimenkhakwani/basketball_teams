@@ -7,7 +7,7 @@
 ## Description
 
 This web app allows users to choose a team and add themselves to it using MySQL and a one-to-many relationship. Created for Daughter of Eve, a non-profit that hosts events for Muslim girls.
-<img src="web/img/screenshot.png" alt="A screenshot of the web app">
+<img src="/web/img/screenshot.png" alt="A screenshot of the web app">
 
 ## Setup/Installation Requirements
 
