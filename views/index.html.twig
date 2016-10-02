@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>DOE Basketball Teams</title>
+</head>
+<body>
+    <div class="container">
+        <h1>DOE Basketball Teams</h1>
+        <hr>
+        <div class="row">
+            {% for team in teams %}
+            <div class="col-md-4" id= "box">
+                <h3>{{ team.getName }}<a href="/joinTeam/{{team.getId}}"><img src="/img/plus.png"></a></h3>
+                <ul>
+                    {% for player in team.getPlayers %}
+                        <li>{{ player.getName }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
