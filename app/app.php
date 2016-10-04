@@ -38,7 +38,7 @@
         $team_id = $team->getId();
         $new_player = new Player($name, null, $age, $email, $team_id);
         $new_player->save();
-        return $app['twig']->render('index.html.twig', array('teams' => Team::getAll()));
+        return $app->redirect('/');
     });
 
     return $app;
